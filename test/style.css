@@ -1,0 +1,280 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Avenir;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.container {
+  margin: auto;
+  width: 100%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-style: normal;
+  font-weight: 800;
+
+  justify-content: space-between;
+}
+
+ul li a {
+  list-style: none;
+  text-decoration: none;
+  text-align: center;
+  color: #000000;
+  margin-left: 50px;
+  font-family: Avenir;
+  font-size: 1rem;
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+}
+
+header {
+  display: flex;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url(font/AvenirLTStd-Medium.otf);
+  src: url(font/AvenirLTStd-Book.otf);
+  src: url(font/AvenirLTStd-Roman.otf);
+}
+
+.image {
+  max-width: 100%;
+}
+
+.titulek {
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 85px;
+  line-height: 116px;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  width: 1171px;
+  height: 330px;
+}
+
+.sipka {
+  position: relative;
+  bottom: 120px;
+  left: 48%;
+}
+
+.obsah {
+  margin: auto;
+  width: 769px;
+  margin-top: 10vh;
+  padding-bottom: 80px;
+}
+
+#keramickeSetkani {
+  margin-bottom: 30px;
+  font-size: 50px;
+}
+
+.kurator {
+  font-size: 25px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 34px;
+  margin-bottom: 81px;
+}
+
+.clanek {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  margin-bottom: 81px;
+}
+
+.autori {
+  margin-bottom: 45px;
+}
+.sloupce {
+  column-count: 4;
+  column-width: 100px;
+  height: 223px;
+  width: 100%;
+  margin-bottom: 50px;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.sloupce p {
+  margin-top: 0;
+}
+
+.arrowLeft {
+  position: relative;
+  right: 80px;
+  top: 310px;
+}
+
+.arrowRight {
+  position: relative;
+  right: 60px;
+  top: 310px;
+  left: 750px;
+}
+.img1 {
+  max-width: 769px;
+  margin-top: 50px;
+  margin-bottom: 70px;
+  float: left;
+}
+
+.img2 {
+  width: 469px;
+  margin-right: 33px;
+  position: relative;
+  bottom: 150px;
+}
+
+.img3 {
+  width: 260px;
+  margin: 0;
+}
+
+.img4 {
+  position: relative;
+  bottom: 120px;
+  left: 197px;
+}
+
+.paticka {
+  background-color: #000000;
+  width: 100%;
+  color: white;
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+
+.ObsahPaticky {
+  margin: auto;
+  width: 75%;
+  display: flex;
+  margin-bottom: 40px;
+  font-family: "avenir";
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 100;
+}
+
+.copyright {
+  align-self: center;
+  position: relative;
+  left: 170px;
+}
+
+.logo {
+  align-self: center;
+  margin-left: 150px;
+  margin-right: 100px;
+  width: 200px;
+}
+
+.address {
+  margin-right: 80px;
+  width: 250px;
+}
+
+.Contact {
+  margin-right: 80px;
+  width: 350px;
+}
+
+.Hours {
+  margin-right: 80px;
+  width: 350px;
+}
+
+.logoFooter {
+  align-self: center;
+  margin-right: 80px;
+  width: 200px;
+}
+
+.vector {
+  position: relative;
+  bottom: 15px;
+}
+
+.slider {
+  position: relative;
+  /*overflow: hidden;*/
+  height: 100vh;
+  width: 100vw;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 769px;
+  height: 100vh;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.slide.current {
+  opacity: 1;
+}
+
+.buttons button#next {
+  position: absolute;
+  bottom: 300px;
+  right: 39%;
+}
+
+.buttons button#prev {
+  position: absolute;
+  bottom: 300px;
+  right: 102%;
+}
+
+.buttons button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.buttons button:hover {
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+}
+.slide:first-child {
+  background: url("img/obr1.png") no-repeat center;
+}
+
+.slide:nth-child(2) {
+  background: url("img/obr2.png") no-repeat center top/cover;
+}
+
+.slide:nth-child(3) {
+  background: url("img/obr3.png") no-repeat center top/cover;
+}
